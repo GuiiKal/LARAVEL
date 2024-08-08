@@ -14,6 +14,11 @@ class SeriesController extends Controller
                 'SUIT'
         ];
 
-        return view('series.index')->with('series', $series);
+        // o . signigica a separação de diretório  
+        return view('series.index')->with('series', $series);        
+    }
+
+    public function create(){
+        return view('series.create');
     }
 }
